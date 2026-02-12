@@ -1,0 +1,162 @@
+.main {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 32px 24px;
+  margin-bottom: 32px;
+}
+
+.header > div:first-child {
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #000000;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0.3px;
+}
+
+.searchContainer {
+  max-width: 500px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+}
+
+.content {
+  background: #ffffff;
+}
+
+.error {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  padding: 16px 24px;
+  background: #fafafa;
+  border: 1px solid #d0d0d0;
+  border-radius: 0;
+  color: #d32f2f;
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 48px 24px;
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 0.3px;
+}
+
+/* Popular Suggestions Section */
+.popularSection {
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  margin: 0 0 24px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.suggestionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.suggestionCard {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  font-family: inherit;
+}
+
+.suggestionCard:hover {
+  border-color: #000000;
+  background: #fafafa;
+}
+
+.suggestionCard:active {
+  background: #f0f0f0;
+}
+
+.cardTitle {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: -0.3px;
+}
+
+.cardDescription {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.cardSource {
+  margin: 0;
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 20px 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 32px;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .searchContainer {
+    width: 100%;
+    justify-content: stretch;
+    min-width: auto;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .popularSection {
+    padding: 20px;
+  }
+
+  .suggestionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
